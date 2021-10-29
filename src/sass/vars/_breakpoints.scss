@@ -1,0 +1,23 @@
+//https://getbootstrap.com/docs/4.1/layout/overview/
+
+$up-sm   : "576px";
+$up-md   : "768px";
+$up-lg   : "992px";
+$up-xl   : "1200px";
+
+@mixin min-width($size) {
+	@media (min-width : $size) {
+		@content;
+	}
+}
+
+$down-sm : "575.98px";
+$down-md : "767.98px";
+$down-lg : "991.98px";
+$down-xl : "1199.98px";
+
+@mixin max-width($size) {
+	@media (max-width : $size) {
+		@content;
+	}
+}

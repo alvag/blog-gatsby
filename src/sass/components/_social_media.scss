@@ -1,0 +1,42 @@
+.social-media {
+	a {
+		color   : $color-dark;
+		display : inline-block;
+		margin  : 5px;
+
+		&:first-of-type {
+			margin-left : 0;
+		}
+
+		&:last-of-type {
+			margin-right : 0;
+		}
+
+		.icon {
+			font-size : 20px;
+			opacity   : 1;
+
+			&:hover {
+				&.youtube {
+					color : $color-youtube;
+				}
+
+				&.linkedin {
+					color : $color-linkedin;
+				}
+
+				&.twitter {
+					color : $color-twitter;
+				}
+
+				&.facebook {
+					color : $color-facebook;
+				}
+
+				&.instagram {
+					color : $color-instagram;
+				}
+			}
+		}
+	}
+}

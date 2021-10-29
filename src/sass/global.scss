@@ -1,0 +1,18 @@
+@import "./vars/index";
+
+// layouts
+@import "./layouts/blog_layout";
+
+// pages
+@import "./pages/home_page";
+
+// components
+@import "./components/menu";
+@import "./components/social_media";
+@import "./components/posts_list";
+@import "./components/pagination";
+
+// templates
+@import "templates/post";
+
+
