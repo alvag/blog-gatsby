@@ -13,7 +13,7 @@ function Post( props ) {
 			<Seo title={post.seo_title || post.title}
 			     description={post.description}
 			     image={`${process.env.STRAPI_URL}${post.miniature.url}`}/>
-			
+
 			<h1>{post.title}</h1>
 
 			<Image src={`${process.env.STRAPI_URL}${post.miniature.url}`}/>

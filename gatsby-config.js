@@ -2,8 +2,6 @@ require( 'dotenv' ).config( {
 	path: `.env.${process.env.NODE_ENV}`,
 } );
 
-console.log( 'STRAPI_URL -> ', process.env.STRAPI_URL );
-
 module.exports = {
 	siteMetadata: {
 		title: `Gatsby Blog`,
@@ -32,20 +30,21 @@ module.exports = {
 				collectionTypes: [`article`]
 			},
 		},
-		/*{
-		 resolve: `gatsby-plugin-manifest`,
-		 options: {
-		 name: `gatsby-starter-default`,
-		 short_name: `starter`,
-		 start_url: `/`,
-		 background_color: `#663399`,
-		 // This will impact how browsers show your PWA/website
-		 // https://css-tricks.com/meta-theme-color-and-trickery/
-		 // theme_color: `#663399`,
-		 display: `minimal-ui`,
-		 icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-		 },
-		 },*/
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `gatsby-starter-default`,
+				short_name: `starter`,
+				start_url: `/`,
+				background_color: `#663399`,
+				// This will impact how browsers show your PWA/website
+				// https://css-tricks.com/meta-theme-color-and-trickery/
+				// theme_color: `#663399`,
+				display: `minimal-ui`,
+				icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+			},
+		},
+		'gatsby-plugin-offline'
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// `gatsby-plugin-offline`,
